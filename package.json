@@ -1,0 +1,22 @@
+{
+  "name": "gympark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ugur": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@turf/buffer": "^6.3.0",
+    "@turf/collect": "^6.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "leaflet-geosearch": "^3.3.0",
+    "mongoose": "^5.12.5",
+    "nodemon": "^2.0.7",
+    "save": "^2.4.0"
+  }
+}

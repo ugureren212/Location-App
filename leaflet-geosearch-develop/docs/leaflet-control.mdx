@@ -1,0 +1,49 @@
+---
+name: Leaflet Control
+route: /leaflet-control
+---
+
+import { Props } from 'docz';
+
+import Playground from './components/Playground';
+import Map from './components/Map';
+import { SearchControl } from './components/typeDefs';
+
+# Leaflet Control
+
+To show the search control on your leaflet map, add the `SearchControl` to the leaflet map
+
+<Playground>
+  <Map provider="OpenStreetMap" />
+</Playground>
+
+```js
+import { SearchControl, OpenStreetMapProvider } from 'leaflet-geosearch';
+
+const searchControl = new SearchControl({
+  provider: new OpenStreetMapProvider(),
+});
+
+map.addControl(searchControl);
+```
+
+## Style
+
+<Playground>
+  <Map provider="OpenStreetMap" controlOptions={{ style: 'button' }} />
+</Playground>
+
+```js
+import { SearchControl, OpenStreetMapProvider } from 'leaflet-geosearch';
+
+const searchControl = new SearchControl({
+  style: 'button',
+  provider: new OpenStreetMapProvider(),
+});
+
+map.addControl(searchControl);
+```
+
+## Properties
+
+<Props of={SearchControl} />
